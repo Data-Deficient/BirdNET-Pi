@@ -24,7 +24,8 @@ if [[ ! -z $PACKAGES_MISSING ]] ; then
 fi
 
 branch=main
-git clone -b $branch https://github.com/mcguirepr89/BirdNET-Pi.git ${HOME}/BirdNET-Pi &&
+# Temp comment, while working on riscv64 port
+#git clone -b $branch https://github.com/mcguirepr89/BirdNET-Pi.git ${HOME}/BirdNET-Pi &&
 
 $HOME/BirdNET-Pi/scripts/install_birdnet.sh
 if [ ${PIPESTATUS[0]} -eq 0 ];then

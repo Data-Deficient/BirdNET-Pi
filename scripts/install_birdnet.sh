@@ -9,14 +9,25 @@ export my_dir=$my_dir
 
 cd $my_dir/scripts || exit 1
 
-if [ "$(uname -m)" != "aarch64" ];then
-  echo "BirdNET-Pi requires a 64-bit OS.
-It looks like your operating system is using $(uname -m),
-but would need to be aarch64.
-Please take a look at https://birdnetwiki.pmcgui.xyz for more
-information"
-  exit 1
-fi
+#if [ "$(uname -m)" != "aarch64" ];then
+#  echo "BirdNET-Pi requires a 64-bit OS.
+#It looks like your operating system is using $(uname -m),
+#but would need to be aarch64.
+#Please take a look at https://birdnetwiki.pmcgui.xyz for more
+#information"
+#  exit 1
+#fi
+
+# TODO
+#case "$(uname -m)" in
+#  "aarch64") ;;
+#  "riscv64") ;;
+##  *) echo "BirdNET-Pi requires a 64-bit OS.
+##It looks like your operating system is using $(uname -m),
+##but would need to be aarch64 or riscv64.
+##Please take a look at https://birdnetwiki.pmcgui.xyz for more
+##information"; exit 1 ;;
+#esac
 
 #Install/Configure /etc/birdnet/birdnet.conf
 ./install_config.sh || exit 1
