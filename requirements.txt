@@ -3,7 +3,7 @@ wheel
 setuptools
 python-whl/riscv64/numpy-1.24.0.dev0+503.gc1fce11d7-cp310-cp310-linux_riscv64.whl
 python-whl/riscv64/scipy-1.10.0.dev0-py3-none-linux_riscv64.whl
-python-whl/riscv64/tflite_runtime-2.10.0-cp38-cp38-linux_riscv64.whl
+python-whl/riscv64/tflite_runtime-2.10.0-cp310-cp310-linux_riscv64.whl
 colorama==0.4.4
 librosa
 pytz
