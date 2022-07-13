@@ -8,7 +8,7 @@ colorama==0.4.4
 librosa
 pytz
 tzlocal
-python-whl/riscv64/scikit_learn-1.2.dev0-cp38-cp38-linux_riscv64.whl
+python-whl/riscv64/scikit_learn-1.2.dev0-cp310-cp310-linux_riscv64.whl
 python-whl/riscv64/pandas-1.5.0.dev0+1121.g56dc719400-cp310-cp310-linux_riscv64.whl
 seaborn
 streamlit

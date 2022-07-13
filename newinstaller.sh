@@ -22,6 +22,7 @@ if [[ ! -z $PACKAGES_MISSING ]] ; then
   sudo apt update
   sudo apt -y install $PACKAGES_MISSING
 fi
+sudo apt-get install -y libopenblas-dev
 
 branch=main
 # Temp comment, while working on riscv64 port

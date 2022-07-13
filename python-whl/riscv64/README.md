@@ -5,11 +5,12 @@ I precompiled some of the libraries that would take to much to compile, as norma
 ## Building instructions
 
 ```
+mkdir ~/tmp
 sudo apt-get install -y python3-dev ccache python3-pybind11 python3-pip
 export PATH=/usr/lib/ccache/:$PATH
 pip3 install build
 cd name-of-python-module
-python3 -m build --wheel
+TMPDIR=~/tmp python3 -m build --wheel
 ls -lh dist/
 ```
 
@@ -19,3 +20,4 @@ ls -lh dist/
 sudo apt install -y cmake ninja-build
 BUILD_NUM_JOBS=$(nproc) PYTHON=python3 tensorflow/lite/tools/pip_package/build_pip_package_with_cmake.sh riscv64
 ```
+
